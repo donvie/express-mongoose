@@ -1,0 +1,21 @@
+https://github.com/visionmedia/express-resource
+
+Default Action Mapping
+
+GET     /forums              ->  index
+GET     /forums/new          ->  new
+POST    /forums              ->  create
+GET     /forums/:forum       ->  show
+GET     /forums/:forum/edit  ->  edit
+PUT     /forums/:forum       ->  update
+DELETE  /forums/:forum       ->  destroy
+
+Top-Level Resource
+
+GET     /                 ->  index
+GET     /new              ->  new
+POST    /                 ->  create
+GET     /:id              ->  show
+GET     /:id/edit         ->  edit
+PUT     /:id              ->  update
+DELETE  /:id              ->  destroy
