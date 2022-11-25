@@ -14,6 +14,15 @@ class TodoService {
             throw new Error(error);
         }
 	}
+
+    async getAll(data) {
+
+        try {
+            return await Todo.find({});
+        } catch (error) {
+            throw new Error(error);
+        }
+	}
 }
 
 module.exports = new TodoService();
